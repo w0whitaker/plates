@@ -1,13 +1,6 @@
 <% provide(:title, "home") %>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-8 text-right">
-			<%= link_to "william whitaker", root_path, id: "logo" %>
-		</div>
+<div class="row">
+	<div class="col-xs-12">
+		<%= image_tag("wall.jpg", class: "img-responsive") %>
 	</div>
-	<footer>
-		<%= link_to "images", images_path %>
-		<%= link_to "cv", cv_path %>
-		<%= link_to "contact", contact_path %>
-	</footer>
 </div>

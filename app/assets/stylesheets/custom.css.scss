@@ -4,16 +4,22 @@
 /* general settings */
 
 #logo {
-	text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 25%;
-}
- 
-.text-right {
-  text-align: right;
-  background: white;
+  font-size: 2em;
 }
 
-.text-left {
-  text-align: left;
+header	{
+	margin: 20px 0;
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}
+
+footer	{
+	margin: 20px 0;
+
+	a {
+		color: black;
+	}
 }
