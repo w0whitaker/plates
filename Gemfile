@@ -29,6 +29,9 @@ gem 'bootstrap-sass', '~> 3.3.1'
 # Automatically add vendor prefixes
 gem 'autoprefixer-rails'
 
+# Helper for Google fonts
+gem 'google-webfonts-rails', '~> 0.0.4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

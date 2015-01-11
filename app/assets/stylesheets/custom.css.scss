@@ -3,23 +3,32 @@
 
 /* general settings */
 
-#logo {
-  font-size: 2em;
-}
-
 header	{
-	margin: 20px 0;
-
+	margin: 25px 0;
+	display: inline;
 	a {
-		text-decoration: none;
 		color: black;
 	}
 }
 
 footer	{
-	margin: 20px 0;
-
+	font-family: "Lato";
+	margin: 25px 0;
 	a {
 		color: black;
+		&:hover	{
+			color: black;
+		}
 	}
+}
+
+/* typography */
+
+#logo {
+  font-family: "Lato";
+  font-size: 2em;
+  &:hover {
+  	text-decoration: none;
+  	color: black;
+  }
 }
