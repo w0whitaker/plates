@@ -1,6 +1,8 @@
 <% provide(:title, "home") %>
+<header></header>
 <div class="row">
-	<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-6">
-		<%= image_tag("wall.jpg", class: "img-responsive") %>
-	</div>
+	<%= render 'layouts/sidebar' %>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<%= image_tag("wall.jpg", class: "img-responsive") %>
+		</div>
 </div>

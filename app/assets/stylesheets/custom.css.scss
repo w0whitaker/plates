@@ -27,8 +27,24 @@ footer	{
 #logo {
   font-family: "Lato";
   font-size: 2em;
+  color: black;
   &:hover {
   	text-decoration: none;
   	color: black;
   }
+}
+
+.sidebar	{
+	font-family: "Lato";
+	ul {
+		font-size: 2em;
+		margin-top: 45px;
+	}
+	a	{
+		color: black;
+		&:hover	{
+			text-decoration: none;
+			color: black;
+		}
+	}
 }
