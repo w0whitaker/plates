@@ -33,14 +33,5 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "maintenance | #{@base_title}"
     opts = {controller: "static_pages", action: "maintenance"}
     assert_routing "/maintenance", opts
-  end
-
-  test "should get images" do
-    get :images
-    assert_response :success
-    assert_select "title", "images | #{@base_title}"
-    opts = {controller: "static_pages", action: "images"}
-    assert_routing "/images", opts
-  end
-
+ end
 end

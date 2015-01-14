@@ -11,6 +11,4 @@ class StaticPagesController < ApplicationController
   def maintenance
   end
 
-  def images
-  end
 end

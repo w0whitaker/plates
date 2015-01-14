@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   get 'maintenance' => 'static_pages#maintenance'
 
-  get 'images' => 'static_pages#images'
-
   #get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
