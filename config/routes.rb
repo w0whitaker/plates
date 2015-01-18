@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :images
-  
+    
   get 'static_pages/home'
 
   get 'contact' => 'static_pages#contact'
@@ -8,6 +7,8 @@ Rails.application.routes.draw do
   get 'cv' => 'static_pages#cv'
 
   get 'maintenance' => 'static_pages#maintenance'
+
+  resources :images
 
   #get 'welcome/index'
 

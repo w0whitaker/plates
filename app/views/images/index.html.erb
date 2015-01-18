@@ -1,0 +1,18 @@
+<% provide(:title, "images") %>
+<div class="row">
+<%= render 'layouts/sidebar' %>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<% @images.each do |image| %>
+				<ul>
+					<li><%= image.title %></li>
+					<li><%= image.date %></li>
+					<li><%= image.dims %></li>
+					<li><%= image.medium %></li>
+					<li><%= link_to	'delete', image_path(image),
+									method: :delete,
+									data: { confirm: 'Are you sure?' } %></li>
+				</ul>
+			<% end %>
+		</div>
+</div>
+
