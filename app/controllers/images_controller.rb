@@ -10,6 +10,10 @@ class ImagesController < ApplicationController
 	def new
 	end
 
+	def edit
+		@image = Image.find(params[:id])
+	end
+
 	def create
 		@image = Image.new(image_params)
 
@@ -36,6 +40,6 @@ class ImagesController < ApplicationController
 
 	private
 		def image_params
-			params.require(:image).permit(:title, :date, :dims, :medium)
+			params.require(:image).permit(:title, :date, :dims, :medium, :plate)
 		end
 end
