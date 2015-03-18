@@ -24,8 +24,12 @@
 	$(".owl-carousel").owlCarousel({
 
 		navigation: true,
-		navigationText: ["prev","next"],
+		navigationText: [
+			"<div class='custom-black'></div>",
+      "<div class='custom-black'></div>"
+		],
 		singleItem: true,
-		theme: "owl-yoshi"
+		theme: "owl-custom",
+		pagination: false
 	});
 </script>
