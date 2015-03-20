@@ -8,6 +8,7 @@ class ImagesController < ApplicationController
 	end
 	
 	def new
+		@image = Image.new
 	end
 
 	def edit
