@@ -1,0 +1,9 @@
+D, [2015-01-13T19:58:41.896857 #2433] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+D, [2015-01-13T19:58:41.897105 #2433] DEBUG -- :   [1m[35m (0.1ms)[0m  select sqlite_version(*)
+D, [2015-01-13T19:58:41.898274 #2433] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2015-01-13T19:58:41.898946 #2433] DEBUG -- :   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+I, [2015-01-13T19:58:41.901991 #2433]  INFO -- : Migrating to CreateImages (20150113174749)
+D, [2015-01-13T19:58:41.902935 #2433] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-01-13T19:58:41.904182 #2433] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" text, "dims" text, "medium" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+D, [2015-01-13T19:58:41.921020 #2433] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150113174749"]]
+D, [2015-01-13T19:58:41.922050 #2433] DEBUG -- :   [1m[35m (0.8ms)[0m  commit transaction
