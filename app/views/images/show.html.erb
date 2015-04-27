@@ -9,7 +9,7 @@
 			<li><%= @image.date %></li>
 			<li><%= @image.dims %></li>
 			<li><%= @image.medium %></li>
-			<li><%= link_to	'delete', image_path(:image),
+			<li><%= link_to	'delete', image_path(@image),
 											method: :delete,
 											data: { confirm: 'Are you sure?' } %>
 					<%= link_to 'edit', edit_image_path(@image) %>
