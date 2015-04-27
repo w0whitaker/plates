@@ -3,7 +3,7 @@
 <div class="row">
 <%= render 'layouts/sidebar' %>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-			<div class="owl-carousel">
+<!-- 			<div class="owl-carousel"> -->
 				<% @images.each do |image| %>
 					<div class="item">
 						<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
@@ -15,7 +15,7 @@
 						</ul>
 					</div>
 				<% end %>
-			</div>
+			<!-- </div> -->
 		</div>
 </div>
 <%= render 'layouts/footer' %>
