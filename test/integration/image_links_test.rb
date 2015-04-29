@@ -15,6 +15,16 @@ class ImageLinksTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", edit_image_path(@image), count: 1
   end
 
+  test "edit image updates image" do
+    get edit_image_path(@image)
+    assert_template 'images/edit'
+    title = "test"
+    patch image_path(@image), image: { title: title, }
+    assert_redirected_to @image
+    @image.reload
+    assert_equal @image.title, title
+  end
+
   test "image page has delete link" do
     get image_path(@image)
     assert_select "a[href=?]", image_path(@image), text: 'delete',
