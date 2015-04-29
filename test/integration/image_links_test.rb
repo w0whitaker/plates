@@ -19,5 +19,8 @@ class ImageLinksTest < ActionDispatch::IntegrationTest
     get image_path(@image)
     assert_select "a[href=?]", image_path(@image), text: 'delete',
                                                   method: :delete
+    assert_difference 'Image.count', -1 do
+      delete image_path(@image)
+    end
   end
 end
