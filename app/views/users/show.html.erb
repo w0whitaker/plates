@@ -1,0 +1,14 @@
+<% provide(:title, @user.name) %>
+<%= render 'layouts/header' %>
+<div class="row">
+  <%= render 'layouts/sidebar' %>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="jumbotron text-right">
+        <h1>administer site</h1>
+        <h6><%= @user.email %></h6>
+        <ul class="text-right">
+          <li><%= link_to "new image", new_image_path %></li>
+        </ul>
+      </div>
+    </div>
+</div>

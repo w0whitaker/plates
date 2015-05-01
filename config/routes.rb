@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   resources :images
 
+  resources :users
+
   #get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
