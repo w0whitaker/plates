@@ -8,6 +8,12 @@ Rails.application.routes.draw do
 
   get 'maintenance' => 'static_pages#maintenance'
 
+  get 'login' => 'sessions#new'
+
+  post 'login' => 'sessions#new'
+
+  delete 'logout' => 'sessions#destroy'
+
   resources :images, only: [:index]
 
   scope '/admin' do
