@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 	# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-	gem 'rails', 									'4.2.0'                  
+	gem 'rails', 									'4.2.0' 
+	# for the hashing of the passwords:
+	gem 'bcrypt',									'~> 3.1.7'                 
 	# Use SCSS for stylesheets
 	gem 'sass-rails', 						'~> 5.0'
 	# Use Uglifier as compressor for JavaScript assets
