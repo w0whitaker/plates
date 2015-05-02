@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-    
-  get 'users/new'
-
+  
   get 'static_pages/home'
 
   get 'contact' => 'static_pages#contact'
@@ -10,10 +8,13 @@ Rails.application.routes.draw do
 
   get 'maintenance' => 'static_pages#maintenance'
 
-  resources :images
+  resources :images, only: [:index]
 
-  resources :users
-
+  scope '/admin' do
+    resources :images, only: [:new, :edit, :show]
+    resources :users, only: [:show]
+  end
+  
   #get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
