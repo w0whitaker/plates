@@ -6,7 +6,11 @@
 <!-- 			<div class="owl-carousel"> -->
 				<% @images.each do |image| %>
 					<div class="item">
+					<% if logged_in? %>
 						<%= link_to (image_tag((image.plate.url if image.plate?), :class => "img-responsive")), image_path(image.id) %>
+						<% else %>
+						<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
+					<% end %>
 						<ul>
 							<li><%= image.title %></li>
 							<li><%= image.date %></li>
