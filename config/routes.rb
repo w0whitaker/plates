@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   resources :images, only: [:index]
 
   scope '/admin' do
-    resources :images, only: [:new, :edit, :show, :destroy, :update]
+    resources :images, only: [:new, :create, :edit, :show, :destroy, :update]
     resources :users, only: [:show]
   end
   
