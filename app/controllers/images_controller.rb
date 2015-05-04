@@ -1,4 +1,6 @@
 class ImagesController < ApplicationController
+	skip_before_action :require_login, only: [:index]
+
 	def index
 		@images = Image.all
 	end
@@ -36,7 +38,7 @@ class ImagesController < ApplicationController
 		@image = Image.find(params[:id])
 		@image.destroy
 
-		redirect_to request.referrer || images_path
+		redirect_to images_path
 	end
 
 	private

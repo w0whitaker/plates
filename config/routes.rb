@@ -8,10 +8,16 @@ Rails.application.routes.draw do
 
   get 'maintenance' => 'static_pages#maintenance'
 
+  get 'login' => 'sessions#new'
+
+  post 'login' => 'sessions#create'
+
+  delete 'logout' => 'sessions#destroy'
+
   resources :images, only: [:index]
 
   scope '/admin' do
-    resources :images, only: [:new, :edit, :show, :destroy, :update]
+    resources :images, only: [:new, :create, :edit, :show, :destroy, :update]
     resources :users, only: [:show]
   end
   
