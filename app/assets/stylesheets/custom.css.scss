@@ -13,17 +13,6 @@ header	{
 	}
 }
 
-footer	{
-	font-family: "Lato";
-	margin: 25px 0;
-	a {
-		color: black;
-		&:hover	{
-			color: black;
-		}
-	}
-}
-
 ul {
 	list-style: none;
 }
@@ -37,7 +26,7 @@ ul {
 /////////////////////////////
 
 #logo {
-  font-family: "Lato";
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 2em;
   color: black;
   &:hover {
@@ -47,7 +36,7 @@ ul {
 }
 
 .sidebar	{
-	font-family: "Lato";
+	font-family: "Lato", Helvetica, Arial, sans-serif;
 	ul {
 		font-size: 2em;
 		margin-top: 45px;
@@ -61,8 +50,19 @@ ul {
 	}
 }
 
+footer	{
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	margin: 25px 0;
+	a {
+		color: black;
+		&:hover	{
+			color: black;
+		}
+	}
+}
+
 .jumbotron	{
-	font-family: "Lato";
+	font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 /////////////////////////////
@@ -81,6 +81,47 @@ ul {
 	box-shadow: none;
 	border-radius: 0px;
 }
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+/*			forms      				 */
+/////////////////////////////
+#new_image	{
+	input  {
+	}
+}
+
+#image_plate	{
+	width: 100%;
+	text-align: left;
+}
+
+.btn  {
+		border-radius: 25px;
+		text-align: left;
+}
+
+.btn-primary	{
+	color: #fff;
+	background-color: #ccc;
+	border-color: #ccc;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+
+.form-control	{
+	box-shadow: none;
+	text-align: left;
+	border-radius: 0px;
+}
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
 
 /////////////////////////////
 /*			slideshow 				 */
