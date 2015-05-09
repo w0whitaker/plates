@@ -2,7 +2,7 @@
 <%= render 'layouts/header' %>
 <div class="row">
 <%= render 'layouts/sidebar' %>
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
 <!-- 			<div class="owl-carousel"> -->
 				<% @images.each do |image| %>
 					<div class="item">
@@ -11,12 +11,20 @@
 						<% else %>
 						<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
 					<% end %>
-						<ul>
-							<li><%= image.title %></li>
-							<li><%= image.date %></li>
-							<li><%= image.dims %></li>
-							<li><%= image.medium %></li>
-						</ul>
+						<div id="plate-captions">
+							<ul>
+								<div id="plate-title">
+									<li><em><%= image.title %></em></li>
+								</div>
+								<div id="plate-info">
+									<small>
+										<li><%= image.date %></li>
+										<li><%= image.dims %></li>
+										<li><%= image.medium %></li>
+									</small>
+								</div>
+							</ul>
+						</div>
 					</div>
 				<% end %>
 			<!-- </div> -->

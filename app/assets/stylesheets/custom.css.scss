@@ -128,9 +128,20 @@ footer	{
 /////////////////////////////
 
 /////////////////////////////
-/*			slideshow 				 */
+/*			images     				 */
 /////////////////////////////
 
+#plate-captions	{
+	ul  {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding-left: 0px;
+	}
+}
+
+#plate-info	{
+	padding-left: 1em;
+}
 /* owl-theme */
 /*.owl-pagination	{
 		display: none;
