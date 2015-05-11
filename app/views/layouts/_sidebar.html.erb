@@ -1,11 +1,11 @@
 <div class="col-md-4 col-lg-4 visible-md visible-lg text-right sidebar">
 		<%= link_to "william whitaker", root_path, id: "logo", class: "text-uppercase" %>
-		<ul class="list-unstyled">
+		<ul id="sidebar-menu" class="list-unstyled">
 			<li><%= link_to "images", images_path %></li>		
 			<li><%= link_to "cv", cv_path %></li>
 			<li><%= link_to "contact", contact_path %></li>
       <% if logged_in? %>
-      <li class="dropdown">
+      <li class="dropdown" id="sidebar-dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           admin <b class="caret"></b>
         </a>

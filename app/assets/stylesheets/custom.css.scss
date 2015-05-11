@@ -21,6 +21,9 @@ ul {
 	margin-left: 1.8796%;
 }
 
+#bumper	{
+	height: 5em;
+}
 /////////////////////////////
 /////////////////////////////
 /////////////////////////////
@@ -39,11 +42,22 @@ ul {
   }
 }
 
-.sidebar	{
+#sidebar-menu	{
 	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	margin-top: 10%;
+}
+
+#sidebar-dropdown	{
+	li  {
+		margin-right: -5px;
+	}
+}
+
+.sidebar	{
 	ul {
-		font-size: 2em;
-		margin-top: 45px;
+		// font-size: 2em;
+		// margin-top: 45px;
 	}
 	a	{
 		color: black;
@@ -84,6 +98,7 @@ footer	{
 	border: none;
 	box-shadow: none;
 	border-radius: 0px;
+	font-size: 1em;
 }
 
 /////////////////////////////
@@ -140,7 +155,7 @@ footer	{
 }
 
 #plate-info	{
-	padding-left: 1em;
+	// padding-left: 1em;
 }
 /* owl-theme */
 /*.owl-pagination	{

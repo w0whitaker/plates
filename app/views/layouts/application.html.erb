@@ -13,6 +13,10 @@
 	<div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="row visible-md visible-lg" id="bumper">
+          <div class="col-md-12 col-lg-12">
+          </div>
+        </div>
         <% flash.each do |message_type, message| %>
             <div class="alert alert-<%= message_type %>"><%= message %></div>
           <% end %>
