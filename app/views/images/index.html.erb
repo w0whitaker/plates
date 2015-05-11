@@ -1,28 +1,37 @@
 <% provide(:title, "images") %>
 <%= render 'layouts/header' %>
 <div class="row">
-<%= render 'layouts/sidebar' %>
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-<!-- 			<div class="owl-carousel"> -->
-				<% @images.each do |image| %>
-					<div class="item">
-					<% if logged_in? %>
-						<%= link_to (image_tag((image.plate.url if image.plate?), :class => "img-responsive")), image_path(image.id) %>
-						<% else %>
-						<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
-					<% end %>
+	<%= render 'layouts/sidebar' %>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+		<div id="main-content">
+	<!-- 			<div class="owl-carousel"> -->
+			<% @images.each do |image| %>
+				<div class="item">
+				<% if logged_in? %>
+					<%= link_to (image_tag((image.plate.url if image.plate?), :class => "img-responsive")), image_path(image.id) %>
+					<% else %>
+					<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
+				<% end %>
+					<div id="plate-captions">
 						<ul>
-							<li><%= image.title %></li>
-							<li><%= image.date %></li>
-							<li><%= image.dims %></li>
-							<li><%= image.medium %></li>
+							<div id="plate-title">
+								<li><em><%= image.title %></em></li>
+							</div>
+							<div id="plate-info">
+								<small>
+									<li><%= image.date %></li>
+									<li><%= image.dims %></li>
+									<li><%= image.medium %></li>
+								</small>
+							</div>
 						</ul>
 					</div>
-				<% end %>
-			<!-- </div> -->
+				</div>
+			<% end %>
+		<!-- </div> -->
 		</div>
+	</div>
 </div>
-<%= render 'layouts/footer' %>
 
 <script type="text/javascript">
 	$(".owl-carousel").owlCarousel({
