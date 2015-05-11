@@ -1,20 +1,25 @@
 <% provide(:title, 'Log in') %>
-<h1>Log in</h1>
+<%= render 'layouts/header' %>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:session, url: login_path) do |f| %>
       
+    <p class="form-group">
       <%= f.label :email %>
-      <%= f.text_field :email, class: 'form-control' %>
-      
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.submit "Log in", class: "btn btn-primary" %>
-    <% end %>
-
-    <%= render 'layouts/debug' %>
+      <%= f.text_field :email, class: 'form-control', :placeholder => 'enter email' %>
+    </p>
     
+    <p class="form-group">  
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control', :placeholder => 'enter password' %>
+    </p>
+
+    <p>
+      <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+      <i class="glyphicon glyphicon-log-in"></i>Log in
+      <% end %>
+    </p>
+    <% end %>    
   </div>
 </div>

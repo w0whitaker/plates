@@ -32,6 +32,10 @@ ul {
 /*			typography  			 */
 /////////////////////////////
 
+body  {
+	font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 #logo {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 2em;
@@ -137,6 +141,13 @@ footer	{
 	box-shadow: none;
 	text-align: left;
 	border-radius: 0px;
+	&:input-placeholder  {
+		font-style: italic;
+	}
+}
+
+.glyphicon	{
+	margin-right: 5px;
 }
 /////////////////////////////
 /////////////////////////////
