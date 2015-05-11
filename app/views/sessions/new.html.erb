@@ -2,24 +2,27 @@
 <%= render 'layouts/header' %>
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path) do |f| %>
+  <%= render 'layouts/sidebar' %>
+  <div class="col-md-4 col-lg-6">
+    <div id="main-content">
+      <%= form_for(:session, url: login_path) do |f| %>
+        
+      <p class="form-group">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: 'form-control', :placeholder => 'enter email' %>
+      </p>
       
-    <p class="form-group">
-      <%= f.label :email %>
-      <%= f.text_field :email, class: 'form-control', :placeholder => 'enter email' %>
-    </p>
-    
-    <p class="form-group">  
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control', :placeholder => 'enter password' %>
-    </p>
+      <p class="form-group">  
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control', :placeholder => 'enter password' %>
+      </p>
 
-    <p>
-      <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
-      <i class="glyphicon glyphicon-log-in"></i>Log in
+      <p>
+        <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+        <i class="glyphicon glyphicon-log-in"></i>Log in
+        <% end %>
+      </p>
       <% end %>
-    </p>
-    <% end %>    
+    </div>
   </div>
 </div>
