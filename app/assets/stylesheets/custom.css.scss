@@ -29,6 +29,42 @@ ul {
 	margin-top: 1.5%;
 }
 
+#top-link-block.affix-top	{
+	position: absolute;
+	bottom: -82px;
+	right: 10px;
+	.glyphicon {
+		margin: 0px;
+	}
+	.well	{
+		background-color: rgba(204,204,204,0.25);
+	}
+	a  {
+		color: rgba(204,204,204,0.1);
+	}
+}
+
+#top-link-block.affix	{
+	position: fixed;
+	bottom: 18px;
+	right: 10px;
+	.glyphicon {
+		margin: 0px;
+	}
+	.well	{
+		background-color: rgba(204,204,204,0.25);
+	}
+	a  {
+		color: rgba(204,204,204,0.1);
+	}
+}
+
+.well	{
+	border: none;
+	box-shadow: none;
+	background-color: #ccc;
+}
+
 /////////////////////////////
 /////////////////////////////
 /////////////////////////////
@@ -130,6 +166,9 @@ footer	{
 .btn  {
 		border-radius: 25px;
 		text-align: left;
+		.glyphicon	{
+			margin-right: 5px;
+		}
 }
 
 .btn-primary	{
@@ -152,7 +191,7 @@ footer	{
 }
 
 .glyphicon	{
-	margin-right: 5px;
+	color: white;
 }
 /////////////////////////////
 /////////////////////////////
