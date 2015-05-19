@@ -1,0 +1,23 @@
+<% @images.each do |image| %>
+	<div class="item">
+	<% if logged_in? %>
+		<%= link_to (image_tag((image.plate.url if image.plate?), :class => "img-responsive")), image_path(image.id) %>
+		<% else %>
+		<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
+	<% end %>
+		<div id="plate-captions">
+			<ul>
+				<div id="plate-title">
+					<li><em><%= image.title %></em></li>
+				</div>
+				<div id="plate-info">
+					<small>
+						<li><%= image.date %></li>
+						<li><%= image.dims %></li>
+						<li><%= image.medium %></li>
+					</small>
+				</div>
+			</ul>
+		</div>
+	</div>
+<% end %>
