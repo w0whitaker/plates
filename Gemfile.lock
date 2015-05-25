@@ -73,6 +73,8 @@ GEM
     excon (0.45.3)
     execjs (2.5.2)
     ffi (1.9.8)
+    figaro (1.1.1)
+      thor (~> 0.14)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.29.0)
@@ -325,6 +327,7 @@ DEPENDENCIES
   byebug
   carrierwave (= 0.10.0)
   coffee-rails (~> 4.1.0)
+  figaro
   fog
   google-webfonts-rails (~> 0.0.4)
   guard-minitest (= 2.3.1)

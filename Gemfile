@@ -31,6 +31,8 @@ source 'https://rubygems.org'
 	# contact form gems
 	gem 'simple_form'
 	gem 'mail_form'
+	# securely store environment variable
+	gem 'figaro'
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record

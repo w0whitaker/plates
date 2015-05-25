@@ -38,4 +38,16 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # mailier setup
+  config.action_mailer.delivery_method = :smtp
+  #SMTP settings
+  config.action_mailer.smtp_settings = {
+    :address => "pequod.mrwilliamwhitaker.com",
+    :port => 587,
+    :user_name => ENV['mail_username'],
+    :password => ENV['mail_password'],
+    :authentication => "plain",
+    :enable_starttls_auto => true
+  }
 end
