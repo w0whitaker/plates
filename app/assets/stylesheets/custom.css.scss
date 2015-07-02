@@ -28,15 +28,16 @@ ul {
   margin-left: 1.8796%;
 }
 
-#bumper {
+bumper {
   height: 5em;
 }
 
-#main-content {
+main-content {
   margin-top: 1.5%;
 }
 
-#top-link-block.affix-top {
+top-link-block
+  .affix-top {
   bottom: -82px;
   position: absolute;
   right: 10px;
@@ -54,7 +55,8 @@ ul {
   }
 }
 
-#top-link-block.affix {
+top-link-block
+  .affix {
   bottom: 18px;
   position: fixed;
   right: 10px;
@@ -95,7 +97,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-#logo {
+logo {
   color: $black;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 2em;
@@ -123,6 +125,7 @@ sidebar-dropdown {
     // font-size: 2em;
     // margin-top: 45px;
   }
+
   a {
     color: $black;
 
@@ -234,65 +237,22 @@ plate-captions {
 }
 
 plate-controls {
-  background-color: $white
-  margin-top: 1em;
+  background-color: $white;
   margin-bottom: 1em;
+  margin-top: 1em;
   padding-left: 0;
   text-align: right;
-    .glyphicon
-    {
-        font-size: 2em;
 
-        color: #ccc;
+  .glyphicon {
+    color: $warm-grey;
+    font-size: 2em;
     }
 }
 
-
-#plate-info
-{
-    // padding-left: 1em;
-}
-/* owl-theme */
-/*.owl-pagination {
-    display: none;
-}
-*/
-.owl-controls
-{
-    text-align: right;
+.cv-item {
+  margin-bottom: 1em;
 }
 
-.owl-prev
-{
-    display: inline-block;
-
-    margin: 0 10px 0 0;
-}
-
-.owl-next
-{
-    display: inline-block;
-}
-
-.custom-black
-{
-    width: 10px;
-    height: 10px;
-
-    background: black;
-}
-
-/////////////////////////////
-/////////////////////////////
-/////////////////////////////
-
-.cv-item
-{
-    // margin-top: 0.5em;
-    margin-bottom: 1em;
-}
-
-.cv-section
-{
-    margin-bottom: 1em;
+.cv-section {
+  margin-bottom: 1em;
 }
