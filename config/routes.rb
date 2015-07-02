@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   get 'cv' => 'static_pages#cv'
 
+  get 'contact' => 'contacts#new'
+
+  post 'contacts' => 'contacts#create'
+
   get 'maintenance' => 'static_pages#maintenance'
 
   get 'login' => 'sessions#new'
@@ -13,8 +17,6 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   resources :images, only: [:index]
-
-  resources :contacts, only: [:new, :create]
 
   scope '/admin' do
     resources :images, only: [:new, :create, :edit, :show, :destroy, :update]
