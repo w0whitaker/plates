@@ -28,50 +28,12 @@ ul {
   margin-left: 1.8796%;
 }
 
-bumper {
+.bumper {
   height: 5em;
 }
 
-main-content {
-  margin-top: 1.5%;
-}
-
-top-link-block
-  .affix-top {
-  bottom: -82px;
-  position: absolute;
-  right: 10px;
-
-  .glyphicon {
-    margin: 0;
-  }
-
-  .well {
-    background-color: rgba(204, 204, 204, .25);
-  }
-
-  a {
-    color: rgba(204, 204, 204, .1);
-  }
-}
-
-top-link-block
-  .affix {
-  bottom: 18px;
-  position: fixed;
-  right: 10px;
-
-  .glyphicon {
-    margin: 0;
-  }
-
-  .well {
-    background-color: rgba(204, 204, 204, .25);
-  }
-
-  a {
-    color: rgba(204, 204, 204, .1);
-    }
+.main {
+  margin-top: 1.25%;
 }
 
 .well {
@@ -97,7 +59,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-logo {
+.logo {
   color: $black;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 2em;
@@ -108,13 +70,14 @@ logo {
     }
 }
 
-sidebar-menu {
+.sidebar-menu {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 2em;
   margin-top: 10%;
 }
 
-sidebar-dropdown {
+// if logged in, this would be the 'admin' menu
+.sidebar-dropdown {
   li {
     margin-right: -5px;
   }
@@ -181,7 +144,7 @@ footer {
 /////////////////////////////
 
 
-image-plate {
+.image-plate {
   text-align: left;
   width: 100%;
 }
@@ -228,7 +191,7 @@ image-plate {
 //      images             //
 /////////////////////////////
 
-plate-captions {
+.plate-captions {
   ul {
     margin-bottom: 1em;
     margin-top: 1em;
@@ -236,7 +199,7 @@ plate-captions {
     }
 }
 
-plate-controls {
+.plate-controls {
   background-color: $white;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -249,6 +212,14 @@ plate-controls {
     }
 }
 
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+//      cv                 //
+/////////////////////////////
+
 .cv-item {
   margin-bottom: 1em;
 }
@@ -256,3 +227,7 @@ plate-controls {
 .cv-section {
   margin-bottom: 1em;
 }
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////

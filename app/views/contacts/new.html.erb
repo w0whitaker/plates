@@ -3,7 +3,7 @@
   <div class="row">
   <%= render 'layouts/sidebar' %>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div id="main-content">
+      <div role="main" class="main">
         <%= simple_form_for @contact, :html => { :class => 'form_horizontal' } do |f| %>
           <%= f.input :name, :required => true %>
           <%= f.input :email, :required => true %>
@@ -16,4 +16,4 @@
         <% end %>
       </div>
     </div>
-  </div>  
+  </div>

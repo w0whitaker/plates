@@ -4,15 +4,15 @@
 <div class="row">
   <%= render 'layouts/sidebar' %>
   <div class="col-md-4 col-lg-6">
-    <div id="main-content">
+    <div role="main">
       <%= form_for(:session, url: login_path) do |f| %>
-        
+
       <p class="form-group">
         <%= f.label :email %>
         <%= f.text_field :email, class: 'form-control', :placeholder => 'enter email' %>
       </p>
-      
-      <p class="form-group">  
+
+      <p class="form-group">
         <%= f.label :password %>
         <%= f.password_field :password, class: 'form-control', :placeholder => 'enter password' %>
       </p>
