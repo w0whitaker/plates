@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   skip_before_action :require_login
-  
+
   def new
     @contact = Contact.new
   end
@@ -10,7 +10,8 @@ class ContactsController < ApplicationController
     @contact.request = request
     if @contact.deliver
       flash.now[:error] = nil
-      flash.now[:notice] = 'Message sent successfully.'
+      flash[:notice] = 'Message sent successfully.'
+      redirect_to root_path
     else
       flash.now[:error] = 'Cannot send message.'
       render :new
