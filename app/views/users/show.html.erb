@@ -1,0 +1,11 @@
+<% provide(:title, @user.name) %>
+<%= render 'layouts/header' %>
+<div class="row">
+  <%= render 'layouts/sidebar' %>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="jumbotron text-right">
+        <h6><%= @user.email %></h6>
+        <%= render 'layouts/debug' %>
+      </div>
+    </div>
+</div>

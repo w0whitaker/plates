@@ -1,15 +1,28 @@
 Rails.application.routes.draw do
-    
+  
   get 'static_pages/home'
-
-  get 'contact' => 'static_pages#contact'
 
   get 'cv' => 'static_pages#cv'
 
+  get 'contact' => 'contacts#new'
+
+  post 'contacts' => 'contacts#create'
+
   get 'maintenance' => 'static_pages#maintenance'
 
-  resources :images
+  get 'login' => 'sessions#new'
 
+  post 'login' => 'sessions#create'
+
+  delete 'logout' => 'sessions#destroy'
+
+  resources :images, only: [:index]
+
+  scope '/admin' do
+    resources :images, only: [:new, :create, :edit, :show, :destroy, :update]
+    resources :users, only: [:show]
+  end
+  
   #get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

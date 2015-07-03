@@ -18,3 +18,8 @@
 
 #Ignore Spring files.
 /spring/*.pid
+
+# Ignore public uploads
+/public
+# Ignore application configuration
+/config/application.yml

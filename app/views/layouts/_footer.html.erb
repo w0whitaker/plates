@@ -4,6 +4,22 @@
 			<li><%= link_to "images", images_path %></li>
 			<li><%= link_to "cv", cv_path %></li>
 			<li><%= link_to "contact", contact_path %></li>
+      <% if logged_in? %>
+      <li class="dropup">
+        <a href="#" class="dropdown-toggle" type="button" id="admin_dropdown" data-toggle="dropdown" aria-expanded="true">
+        admin
+        <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="admin_dropdown">
+          <li>
+            <%= link_to "new image", new_image_path, method: "get" %>
+          </li>
+          <li>
+            <%= link_to "log out", logout_path, method: "delete" %>
+          </li>
+        </ul>
+      </li>
+      <% end %>
 		</ul>
 	</div>
 </footer>

@@ -1,78 +1,233 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
-/* general settings */
+$black: #000;
+$white: #fff;
+$warm-grey: #ccc;
 
-header	{
-	margin: 25px 0;
-	display: inline;
-	a {
-		color: black;
-	}
-}
+/////////////////////////////
+//    general settings     //
+/////////////////////////////
 
-footer	{
-	font-family: "Lato";
-	margin: 25px 0;
-	a {
-		color: black;
-		&:hover	{
-			color: black;
-		}
-	}
+header {
+  display: inline;
+
+  margin: 25px 0;
+
+  a
+ {
+    color: $black;
+    }
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
-/* typography */
+.links {
+  margin-left: 1.8796%;
+}
 
-#logo {
-  font-family: "Lato";
+.bumper {
+  height: 5em;
+}
+
+.main {
+  margin-top: 1.25%;
+}
+
+.well {
+  background-color: $warm-grey;
+  border: 0;
+  box-shadow: none;
+}
+
+.alert {
+  padding: 25px 0;
+  text-align: left;
+}
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+//      typography         //
+/////////////////////////////
+
+body {
+  font-family: 'Lato', 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.logo {
+  color: $black;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 2em;
-  color: black;
+
   &:hover {
-  	text-decoration: none;
-  	color: black;
+    color: $black;
+    text-decoration: none;
+    }
+}
+
+.sidebar-menu {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 10%;
+}
+
+// if logged in, this would be the 'admin' menu
+.sidebar-dropdown {
+  li {
+    margin-right: -5px;
   }
 }
 
-.sidebar	{
-	font-family: "Lato";
-	ul {
-		font-size: 2em;
-		margin-top: 45px;
-	}
-	a	{
-		color: black;
-		&:hover	{
-			text-decoration: none;
-			color: black;
-		}
-	}
+.sidebar {
+  ul {
+    // font-size: 2em;
+    // margin-top: 45px;
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
+  }
 }
 
-/* owl-theme */
-/*.owl-pagination	{
-		display: none;
-}
-*/
-.owl-controls	{
-	text-align: right;
+footer {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  margin: 25px 0;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
-.owl-prev	{
-	display: inline-block;
-	margin: 0 10px 0 0;
+.jumbotron {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
-.owl-next	{
-	display: inline-block;
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+//      dropdown           //
+/////////////////////////////
+
+// background overrides //
+
+.dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1em;
+  min-width: 100%;
+  text-align: right;
 }
 
-.custom-black	{
-	height: 10px;
-	width: 10px;
-	background: black;
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+//      forms              //
+/////////////////////////////
+
+
+.image-plate {
+  text-align: left;
+  width: 100%;
 }
+
+.btn {
+  border-radius: 25px;
+  text-align: left;
+
+  .glyphicon {
+    margin-right: 5px;
+  }
+}
+
+.btn-primary {
+  background-color: $warm-grey;
+  border-color: $warm-grey;
+  color: $white;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+
+  &:input-placeholder {
+    font-style: italic;
+  }
+}
+
+.glyphicon {
+  color: $white;
+}
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+//      images             //
+/////////////////////////////
+
+.plate-captions {
+  ul {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 0;
+    }
+}
+
+.plate-controls {
+  background-color: $white;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 0;
+  text-align: right;
+
+  .glyphicon {
+    color: $warm-grey;
+    font-size: 2em;
+    }
+}
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////
+
+/////////////////////////////
+//      cv                 //
+/////////////////////////////
+
+.cv-item {
+  margin-bottom: 1em;
+}
+
+.cv-section {
+  margin-bottom: 1em;
+}
+
+/////////////////////////////
+/////////////////////////////
+/////////////////////////////

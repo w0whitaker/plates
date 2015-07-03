@@ -1,35 +1,18 @@
 <% provide(:title, "images") %>
 <%= render 'layouts/header' %>
 <div class="row">
-<%= render 'layouts/sidebar' %>
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-			<div class="owl-carousel">
-				<% @images.each do |image| %>
-					<div class="item">
-						<%= image_tag((image.plate.url if image.plate?), :class => "img-responsive") %>
-						<ul>
-							<li><%= image.title %></li>
-							<li><%= image.date %></li>
-							<li><%= image.dims %></li>
-							<li><%= image.medium %></li>
-						</ul>
-					</div>
-				<% end %>
+	<%= render 'layouts/sidebar' %>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+		<div role="main" class="main">
+			<div id="plate-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner" role="listbox">
+					<%= render 'layouts/plate' %>
+				</div>
 			</div>
 		</div>
+	</div>
 </div>
-<%= render 'layouts/footer' %>
 
 <script type="text/javascript">
-	$(".owl-carousel").owlCarousel({
-
-		navigation: true,
-		navigationText: [
-			"<div class='custom-black'></div>",
-      "<div class='custom-black'></div>"
-		],
-		singleItem: true,
-		theme: "owl-custom",
-		pagination: false
-	});
+	$('#plate-carousel .carousel-inner > .item:first').addClass('active');
 </script>

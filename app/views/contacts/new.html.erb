@@ -1,0 +1,19 @@
+<% provide(:title, "contact") %>
+  <%= render 'layouts/header' %>
+  <div class="row">
+  <%= render 'layouts/sidebar' %>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div role="main" class="main">
+        <%= simple_form_for @contact, :html => { :class => 'form_horizontal' } do |f| %>
+          <%= f.input :name, :required => true %>
+          <%= f.input :email, :required => true %>
+          <%= f.input :message, :as => :text, :required => false, :input_html => { :rows => 10 } %>
+          <div class="hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div class="form-actions">
+            <%= f.button :submit, 'Send message', :class => "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>

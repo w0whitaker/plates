@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  date: MyText
-  dims: MyText
-  medium: MyText
+  id: 1
+  title: one
+  date: today
+  dims: big
+  medium: paint
 
 two:
-  title: MyString
-  date: MyText
-  dims: MyText
-  medium: MyText
+  title: two
+  date: yesterday
+  dims: small
+  medium: paint
+

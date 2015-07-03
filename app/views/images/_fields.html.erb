@@ -1,0 +1,20 @@
+	<p>
+		<%= f.label :image %>
+		<%= f.file_field :plate, :id => 'image-plate', :class => 'image-plate file' %>
+	</p>
+	<p class="form-group">
+		<%= f.label :title %><br>
+		<%= f.text_field :title, :class => 'form-control', :placeholder => 'enter title' %>
+	</p>
+	<p class="form-group">
+		<%= f.label :date %><br>
+		<%= f.text_field :date, :class => 'form-control', :placeholder => 'enter date' %>
+	</p>
+	<p class="form-group">
+		<%= f.label :dims %><br>
+		<%= f.text_field :dims, :class => 'form-control', :placeholder => 'enter dims (HxLxD)' %>
+	</p>
+	<p class="form-group">
+		<%= f.label :medium %><br>
+		<%= f.text_field :medium, :class => 'form-control', :placeholder => 'enter medium' %>
+	</p>
