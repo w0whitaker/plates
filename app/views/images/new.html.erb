@@ -3,12 +3,12 @@
 <div class="row">
 	<%= render 'layouts/sidebar' %>
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div id="main-content">
+      <div role="main" class="main">
         <%= form_for(@image, url: {action: "create"}, html: { multipart: true }) do |f| %>
   				<%= render 'images/fields', f: f %>
           <p>
             <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
-            <i class="glyphicon glyphicon-upload"></i> Submit
+            <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Submit
             <% end %>
           </p>
         <% end %>
@@ -17,7 +17,7 @@
 </div>
 <%= render 'layouts/footer' %>
 <script type="text/javascript">
-  $("#image_plate").fileinput({
+  $("#image-plate").fileinput({
   browseClass: "btn btn-primary btn-block",
   browseLabel: "Browse",
   showCaption: false,
