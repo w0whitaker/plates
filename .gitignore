@@ -20,6 +20,6 @@
 /spring/*.pid
 
 # Ignore public uploads
-/public
+/public/images
 # Ignore application configuration
 /config/application.yml

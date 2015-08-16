@@ -33,6 +33,8 @@ source 'https://rubygems.org'
 	gem 'mail_form'
 	# securely store environment variable
 	gem 'figaro'
+	# easily set maintenance mode
+	gem 'turnout'
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
